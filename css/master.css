@@ -1,0 +1,55 @@
+/* Globals */
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1a1a1a;
+}
+
+div, a, button, section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	background-color: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+iframe {
+	border: none;
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: Simplifica;
+	src: url("../fonts/simplifica.ttf");
+}
+
+@font-face {
+	font-family: Dense;
+	src: url("../fonts/dense.otf");
+}
