@@ -1,3 +1,11 @@
+$(document).ready(function() {
+    $('#faqPic').css('height', $('#faqText').css('height'));
+});
+
+$(window).resize(function() {
+    $('#faqPic').css('height', $('#faqText').css('height'));
+});
+
 // scroll down page to div
 function jumpTo(dest, mobile) {
     // close menu on mobile
