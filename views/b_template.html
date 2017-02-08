@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- meta -->
+		<title>Bands: Cassettes In The Sun</title>
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<!-- scripts -->
+		<script src="../functions.js" type="text/javascript"></script>
+	</head>
+
+	<!-- LANDING -->
+	<body>
+
+		<!-- NAV BAR -->
+		<nav class="navBar band">
+			<div class="navButton" onClick="jumpTo('landing', false)">HOME</div>
+			<div class="navButton" onClick="openContact('band')">CONTACT</div>
+		</nav>
+
+		<!-- CONTACT -->
+		<section id="contactWrap">
+			<div id="formWrap">
+				<div class="closeButton" onclick="closeForm()">&#10005;</div>
+				<form id="contactForm">
+					Name<input type="text" required></input>
+					Email<input type="text" required></input>
+					<div class="bandPageOnly">Event Address<input type="text" required></input></div>
+					<div class="bandPageOnly">Event Date<input type="text" required></input></div>
+					Message<textarea required></textarea>
+					<input type="submit" value="SEND"></input>
+				</form>
+			</div>
+		</section>
+
+		<!-- MAIN CONTENT -->
+		<h1 class="divider"></h1>
+		<section>
+			<div class="bandWrap">
+				<div class="picAndText">
+					<div class="bandPic" style="background-image: url('../pics/bands/')"></div>
+					<div class="bandText">
+						<p></p>
+						<p class="p_bottom"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+<html>

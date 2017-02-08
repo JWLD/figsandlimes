@@ -1,1 +1,433 @@
 @import url('master.css');
+
+body {
+	background-color: #262626;
+}
+
+.p_bottom {
+    margin: 0 !important;
+}
+
+li {
+    margin-left: 30px;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+/* GENERAL */
+
+section {
+	padding: 7vmin 30px;
+}
+
+.divider {
+    justify-content: flex-start;
+    height: 80px;
+    width: 100vw;
+    padding-left: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    font: 50px BrandB;
+	text-transform: uppercase;
+}
+
+/* NAV */
+
+.navBar {
+	position: fixed;
+	z-index: 1;
+	top: -90px;
+	right: -3px;
+	height: 83px;
+	padding: 0 10px 0 10px;
+	background-color: #1a1a1a;
+	border: 3px solid white;
+	transition: 0.2s linear;
+}
+
+.navBar.band {
+	top: -3px;
+}
+
+.navButton {
+	height: 100%;
+	padding: 10px 20px;
+	color: white;
+	font: 25px BrandB;
+}
+
+.navButton:hover {
+	color: #f29787;
+	cursor: pointer;
+}
+
+/* LANDING */
+
+#landing {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../pics/landing2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#title {
+    width: 875px;
+    margin: 10px;
+    padding: 25px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font: 100px BrandB;
+}
+
+#headerBar {
+    width: 895px;
+}
+
+.headerButton {
+    width: 100%;
+    margin: 10px;
+    padding: 10px 20px;
+	border: 3px solid transparent;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font: 30px BrandB;
+}
+
+.headerButton:hover {
+	border-color: white;
+	cursor: pointer;
+}
+
+/* ABOUT */
+
+#about {
+    width: 100vw;
+	min-height: 420px;
+	padding: 0;
+	justify-content: space-between;
+}
+
+#aboutText {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 760px;
+	margin: auto;
+	padding: 30px;
+    color: white;
+    font: 20px BrandL;
+}
+
+#aboutText p {
+	margin-bottom: 15px;
+}
+
+#aboutPic {
+    height: 30vw;
+	min-height: 420px;
+    width: 50%;
+	margin-left: 30px;
+    background-image: url("../pics/about.png");
+    background-size: cover;
+	background-position: center;
+}
+
+/* BANDS */
+
+#bands {
+    flex-wrap: wrap;
+}
+
+.bandLink {
+    position: relative;
+    height: 380px;
+    width: 380px;
+    overflow: hidden;
+    margin: 30px;
+    background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bandTitle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 3px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    font: 25px BrandB;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.45s;
+}
+
+.bandLink:hover .bandTitle {
+    bottom: 140px;
+    height: 100px;
+}
+
+.bandSubtitle {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    transition: 0.45s;
+}
+
+/* FAQ */
+
+#faq {
+	justify-content: space-around;
+}
+
+#faqText {
+	flex-direction: column;
+	color: white;
+}
+
+.qAndA {
+	flex-direction: column;
+	width: 50vw;
+	margin-bottom: 30px;
+}
+
+.faqQuestion {
+	width: 100%;
+	font: 25px BrandR;
+	margin-bottom: 10px;
+}
+
+.faqAnswer {
+	width: 100%;
+	margin-left: 50px;
+	font: 20px BrandL;
+}
+
+#faqPic {
+	height: 30vw;
+	width: 30vw;
+	border-radius: 20vw;
+	background-image: url('../pics/faq.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* CONTACT */
+
+#contactWrap {
+    position: fixed;
+	z-index: 1;
+    top: 0;
+    left: -400px;
+    height: 100vh;
+    padding: 5vw 0;
+    transition: 0.4s;
+}
+
+#formWrap {
+	position: relative;
+}
+
+#contactForm {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    padding: 20px;
+    background-color: #f0f5f5;
+    font: 20px BrandR;
+	box-shadow: 0px 0px 15px #222;
+}
+
+input[type=text] {
+    height: 30px;
+    width: 100%;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font: 20px BrandR;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    font: 20px BrandR;
+}
+
+input[type=submit] {
+    height: 40px;
+    width: 150px;
+    margin: auto;
+    margin-top: 7px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font: 20px BrandB;
+}
+
+input[type=submit]:hover {
+    background-color: #1a1a1a;
+}
+
+.closeButton {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    padding-top: 2px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #222;
+    background-color: #ddd;
+    color: #333;
+    font: 25px BrandR;
+	transition: 0.2s;
+}
+
+.closeButton:hover {
+	transform: rotateZ(180deg);
+	cursor: pointer;
+}
+
+/* BAND PAGES */
+
+.bandWrap {
+	flex-direction: column;
+	width: 950px;
+}
+
+.picAndText {
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.bandPic {
+	min-height: 400px;
+	min-width: 400px;
+	border: 5px solid black;
+	background-size: cover;
+	background-position: center;
+}
+
+.bandText {
+	flex-direction: column;
+	width: 60%;
+	margin-left: 3vw;
+	color: white;
+	font: 20px BrandL;
+}
+
+.bandText p {
+	margin-bottom: 25px;
+}
+
+.videoWrap {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 50px;
+	height: 450px;
+	width: 100%;
+}
+
+.bandVideo {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 450px;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	transition: 0.2s;
+}
+
+.videoImage {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.videoOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: 0.15s;
+	opacity: 0;
+}
+
+.videoOverlay:hover {
+	opacity: 1;
+}
+
+.videoTitle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 5px 10px;
+	color: white;
+	font: 20px BrandL;
+}
+
+.playButton {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 90px;
+	border-radius: 5px;
+	margin: 10px;
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.mediaWrap {
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.bandAudio {
+	width: 100%;
+}
+
+.audioInfo {
+	margin-top: 5px;
+	color: white;
+	font: 20px BrandL;
+}
+
+.bookButton {
+	width: 25%;
+	height: 75px;
+	border: 3px solid transparent;
+	background-color: #1a1a1a;
+	color: white;
+	font: 25px BrandB;
+	text-transform: uppercase;
+}
+
+.bookButton:hover {
+	border-color: white;
+	cursor: pointer;
+}

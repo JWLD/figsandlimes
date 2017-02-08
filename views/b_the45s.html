@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- meta -->
+		<title>Bands: The 45's</title>
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="icon" type="image/png" href="../pics/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="../pics/favicon/favicon-16x16.png" sizes="16x16" />
+		<!-- libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- scripts -->
+		<script src="../functions.js" type="text/javascript"></script>
+	</head>
+
+	<!-- LANDING -->
+	<body>
+
+		<!-- NAV BAR -->
+		<nav class="navBar band">
+			<div class="navButton" onClick="jumpTo('landing', false)">HOME</div>
+			<a class="navButton" href="mailto:figslimes@gmail.com?subject=Booking Enquiry - The 45's&body=Please include date and location.">BOOK</a>
+			<a class="navButton" href="mailto:figslimes@gmail.com">CONTACT</a>
+		</nav>
+
+		<!-- CONTACT -->
+		<section id="contactWrap">
+			<div id="formWrap">
+				<div class="closeButton" onclick="closeForm()">&#10005;</div>
+				<form id="contactForm">
+					Name<input type="text" required></input>
+					Email<input type="text" required></input>
+					<div class="bandPageOnly">Event Address<input type="text" required></input></div>
+					<div class="bandPageOnly">Event Date<input type="text" required></input></div>
+					Message<textarea required></textarea>
+					<input type="submit" value="SEND"></input>
+				</form>
+			</div>
+		</section>
+
+		<!-- MAIN CONTENT -->
+		<h1 class="divider">THE 45'S</h1>
+		<section>
+			<div class="bandWrap">
+				<div class="picAndText">
+					<div class="bandPic" style="background-image: url('../pics/bands/45s.png')"></div>
+					<div class="bandText">
+						<p>The 45's mean business! An international party band that play classic motown, soul and old school R 'n' B but take it up a notch!</p>
+						<p class="p_bottom">Playing classics by Elvis, Little Richard, Otis Redding and others but with fuzzed up guitars, grooving drums and sweet vocal harmonies. The guys play with boatloads of enthusiasm. Guaranteed to electrify energetic crowds and incite dancing among the guests.</p>
+					</div>
+				</div>
+				<div class="videoWrap" onClick="playVideo('Bbm800e-Qn4', this)">
+					<iframe class="bandVideo" frameborder="0" allowfullscreen></iframe>
+					<button class="fa fa-play playButton" style="font-size:35px;"></button>
+					<div class="videoImage" style="background-image: url('../pics/bands/video_45s.png')"></div>
+					<div class="videoOverlay">
+						<span class="videoTitle">The 45's - <i>These Boots</i></span>
+					</div>
+				</div>
+				<a class="bookButton" href="mailto:figslimes@gmail.com?subject=Booking Enquiry - The 45's&body=Please include date and location.">Book Us!<a>
+			</div>
+		</section>
+	</body>
+<html>

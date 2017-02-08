@@ -7,11 +7,7 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: #1a1a1a;
-}
-
-div, a, button, section {
+div, a, button, section, h1, span, form, nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,7 +17,7 @@ button {
 	background-color: transparent;
 }
 
-button:hover {
+button:hover, input[type=submit]:hover, .videoWrap:hover {
 	cursor: pointer;
 }
 
@@ -52,4 +48,19 @@ iframe {
 @font-face {
 	font-family: Dense;
 	src: url("../fonts/dense.otf");
+}
+
+@font-face {
+	font-family: BrandB;
+	src: url("../fonts/brandon_bold.otf");
+}
+
+@font-face {
+	font-family: BrandR;
+	src: url("../fonts/brandon_reg.otf");
+}
+
+@font-face {
+	font-family: BrandL;
+	src: url("../fonts/brandon_light.otf");
 }
