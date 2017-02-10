@@ -1,0 +1,54 @@
+.showOnMobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .showOnMobile {
+        display: flex;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    #bands {
+        padding: 15px;
+    }
+
+    .bandLink {
+        margin: 15px;
+    }
+
+    #about {
+        flex-wrap: wrap;
+    }
+
+    #aboutPic {
+        margin: 0;
+        border-left: 0;
+        width: 100vw;
+        min-height: 0px;
+        height: 40vw;
+    }
+
+    #faq {
+        padding: 0;
+    }
+
+    #faqText {
+        margin: 0 ;
+        padding: 30px;
+    }
+
+    .qAndA {
+        width: 100%;
+    }
+
+    .faqAnswer {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+
+}

@@ -73,7 +73,7 @@ function closeForm() {
 $(document).scroll(function() {
     if ((document.title).split(" ")[0] != 'Bands:') {
         if ($(window).scrollTop() >= 600) {
-            $(".navBar").css("top", "-3px");
+            $(".navBar").css("top", "-5px");
         } else {
             $(".navBar").css("top", "-90px");
         }

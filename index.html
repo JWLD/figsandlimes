@@ -6,6 +6,7 @@
 		<title>Figs & Limes</title>
 		<!-- style -->
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/responsive.css">
 		<link rel="icon" type="image/png" href="pics/favicon/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="pics/favicon/favicon-16x16.png" sizes="16x16" />
 		<!-- libraries -->
@@ -16,6 +17,30 @@
 	</head>
 
 	<body>
+		<!-- MOBILE NAV -->
+		<button id="menuButton" class="showOnMobile" onclick="toggleMobileMenu(this)">
+			<div class="menuIconBar one"></div>
+			<div class="menuIconBar two"></div>
+			<div class="menuIconBar three"></div>
+		</button>
+
+		<div id="mobileMenu">
+			<button class="menuHeaderButton mobile about" onclick="jumpTo('landing', true)">HOME</button>
+			<button class="menuHeaderButton mobile work" onclick="jumpTo('about', true)">ABOUT</button>
+			<button class="menuHeaderButton mobile work" onclick="jumpTo('bands', true)">BANDS</button>
+			<a class="menuHeaderButton mobile ref" href="mailto:figslimes@gmail.com">CONTACT</a>
+			<button class="menuHeaderButton mobile contact" onclick="jumpTo('faq', true)">FAQ</button>
+		</div>
+
+		<!-- NAV BAR -->
+		<nav class="navBar hideOnMobile">
+			<div class="navButton" onClick="jumpTo('landing', false)">HOME</div>
+			<div class="navButton" onClick="jumpTo('about', false)">ABOUT</div>
+			<div class="navButton" onClick="jumpTo('bands', false)">BANDS</div>
+			<a class="navButton" href="mailto:figslimes@gmail.com">CONTACT</a>
+			<div class="navButton" onClick="jumpTo('faq', false)">FAQ</div>
+		</nav>
+
 		<!-- CONTACT -->
 		<section id="contactWrap">
 			<div id="formWrap">
@@ -31,19 +56,10 @@
 			</div>
 		</section>
 
-		<!-- NAV BAR -->
-		<nav class="navBar">
-			<div class="navButton" onClick="jumpTo('landing', false)">HOME</div>
-			<div class="navButton" onClick="jumpTo('about', false)">ABOUT</div>
-			<div class="navButton" onClick="jumpTo('bands', false)">BANDS</div>
-			<a class="navButton" href="mailto:figslimes@gmail.com">CONTACT</a>
-			<div class="navButton" onClick="jumpTo('faq', false)">FAQ</div>
-		</nav>
-
 		<!-- LANDING -->
 		<section id="landing">
 			<h1 id="title">FIGS AND LIMES</h1>
-			<div id="headerBar">
+			<div id="headerBar" class="hideOnMobile">
 				<div class="headerButton" onClick="jumpTo('about', false)">ABOUT</div>
 				<div class="headerButton" onClick="jumpTo('bands', false)">BANDS</div>
 				<a class="headerButton" href="mailto:figslimes@gmail.com">CONTACT</a>
@@ -81,7 +97,7 @@
 		<!-- FAQ -->
 		<h1 class="divider faq">FAQ</h1>
 		<section id="faq">
-			<div id="faqPic"></div>
+			<div id="faqPic" class="hideOnMobile"></div>
 			<div id="faqText">
 				<div class="qAndA">
 					<p class="faqQuestion">What's the general process for booking an act?</p>
