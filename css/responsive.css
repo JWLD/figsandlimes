@@ -11,12 +11,9 @@
         display: none;
     }
 
-    #bands {
-        padding: 15px;
-    }
-
-    .bandLink {
-        margin: 15px;
+    #title {
+        max-width: 80vw;
+        font-size: 15vmin;
     }
 
     #about {
@@ -29,6 +26,14 @@
         width: 100vw;
         min-height: 0px;
         height: 40vw;
+    }
+
+    #bands {
+        padding: 15px;
+    }
+
+    .bandLink {
+        margin: 15px;
     }
 
     #faq {
