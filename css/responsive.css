@@ -52,8 +52,62 @@
     .faqAnswer {
         margin-left: 20px;
     }
+
+    .bandSection {
+        padding: 15px;
+    }
+
+    .bandWrap {
+        margin: 15px;
+        max-width: calc(100vw - 60px);
+    }
+
+    .picAndText {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bandPic {
+        width: 60vw;
+        height: 60vw;
+        margin-top: 20px;
+    }
+
+    .bandText {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .videoWrap {
+        height: 50vw;
+    }
+
+    .divider.bandPage {
+        font-size: 6vw;
+    }
 }
 
+/* keep band links square */
 @media (max-width: 440px) {
+    .bandLink {
+        height: calc(100vw - 60px);
+    }
 
+    .bandPic {
+        min-width: calc(100vw - 60px);
+        min-height: calc(100vw - 60px);
+    }
+
+    .videoWrap {
+        height: 80vw;
+    }
+
+    .videoTitle {
+        font-size: 17px;
+    }
+
+    .divider.bandPage {
+        font-size: 7vw;
+    }
 }

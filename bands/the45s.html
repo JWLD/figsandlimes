@@ -4,10 +4,11 @@
 	<head>
 		<!-- meta -->
 		<title>Bands: The 45's</title>
-		<!-- style -->
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="icon" type="image/png" href="../pics/favicon/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="../pics/favicon/favicon-16x16.png" sizes="16x16" />
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 		<!-- libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,9 +18,21 @@
 
 	<!-- LANDING -->
 	<body>
+		<!-- MOBILE NAV -->
+		<button id="menuButton" class="showOnMobile" onclick="toggleMobileMenu(this)">
+			<div class="menuIconBar one"></div>
+			<div class="menuIconBar two"></div>
+			<div class="menuIconBar three"></div>
+		</button>
+
+		<div id="mobileMenu">
+			<button class="menuHeaderButton mobile about" onclick="jumpTo('landing', true)">HOME</button>
+			<a class="menuHeaderButton mobile ref" href="mailto:figslimes@gmail.com?subject=Booking Enquiry - The 45's&body=Please include date and location.">BOOK</a>
+			<a class="menuHeaderButton mobile ref" href="mailto:figslimes@gmail.com">CONTACT</a>
+		</div>
 
 		<!-- NAV BAR -->
-		<nav class="navBar band">
+		<nav class="navBar band hideOnMobile">
 			<div class="navButton" onClick="jumpTo('landing', false)">HOME</div>
 			<a class="navButton" href="mailto:figslimes@gmail.com?subject=Booking Enquiry - The 45's&body=Please include date and location.">BOOK</a>
 			<a class="navButton" href="mailto:figslimes@gmail.com">CONTACT</a>
@@ -41,16 +54,18 @@
 		</section>
 
 		<!-- MAIN CONTENT -->
-		<h1 class="divider">THE 45's</h1>
-		<section>
+		<h1 class="divider bandPage">THE 45'S</h1>
+		<section class="bandSection">
 			<div class="bandWrap">
 				<div class="picAndText">
 					<div class="bandPic" style="background-image: url('../pics/bands/45s.png')"></div>
 					<div class="bandText">
+						<span class="sectionTitle"><div>ABOUT</div></span>
 						<p>The 45's mean business! An international party band that play classic motown, soul and old school R 'n' B but take it up a notch!</p>
 						<p class="p_bottom">Playing classics by Elvis, Little Richard, Otis Redding and others but with fuzzed up guitars, grooving drums and sweet vocal harmonies. The guys play with boatloads of enthusiasm. Guaranteed to electrify energetic crowds and incite dancing among the guests.</p>
 					</div>
 				</div>
+				<span class="sectionTitle media"><div>WATCH</div></span>
 				<div class="videoWrap" onClick="playVideo('Bbm800e-Qn4', this)">
 					<iframe class="bandVideo" frameborder="0" allowfullscreen></iframe>
 					<button class="fa fa-play playButton" style="font-size:35px;"></button>

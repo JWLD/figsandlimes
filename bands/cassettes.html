@@ -4,10 +4,11 @@
 	<head>
 		<!-- meta -->
 		<title>Bands: Cassettes In The Sun</title>
-		<!-- style -->
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="icon" type="image/png" href="../pics/favicon/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="../pics/favicon/favicon-16x16.png" sizes="16x16" />
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 		<!-- libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- scripts -->
@@ -16,9 +17,21 @@
 
 	<!-- LANDING -->
 	<body>
+		<!-- MOBILE NAV -->
+		<button id="menuButton" class="showOnMobile" onclick="toggleMobileMenu(this)">
+			<div class="menuIconBar one"></div>
+			<div class="menuIconBar two"></div>
+			<div class="menuIconBar three"></div>
+		</button>
+
+		<div id="mobileMenu">
+			<button class="menuHeaderButton mobile about" onclick="jumpTo('landing', true)">HOME</button>
+			<a class="menuHeaderButton mobile ref" href="mailto:figslimes@gmail.com?subject=Booking Enquiry - The 45's&body=Please include date and location.">BOOK</a>
+			<a class="menuHeaderButton mobile ref" href="mailto:figslimes@gmail.com">CONTACT</a>
+		</div>
 
 		<!-- NAV BAR -->
-		<nav class="navBar band">
+		<nav class="navBar band hideOnMobile">
 			<div class="navButton" onClick="jumpTo('landing', false)">HOME</div>
 			<a class="navButton" href="mailto:figslimes@gmail.com?subject=Booking Enquiry - Cassettes In The Sun&body=Please include date and location.">BOOK</a>
 			<a class="navButton" href="mailto:figslimes@gmail.com">CONTACT</a>
@@ -40,17 +53,19 @@
 		</section>
 
 		<!-- MAIN CONTENT -->
-		<h1 class="divider">Cassettes In The Sun</h1>
-		<section>
+		<h1 class="divider bandPage">CASSETTES IN THE SUN</h1>
+		<section class="bandSection">
 			<div class="bandWrap">
 				<div class="picAndText">
 					<div class="bandPic" style="background-image: url('../pics/bands/cassettes.png')"></div>
 					<div class="bandText">
+						<span class="sectionTitle"><div>ABOUT</div></span>
 						<p>Cassettes In The Sun have an outstanding live show where you, your family and all your friends will be captured from the very beginning. You'll have no excuse not to get involved as every track is a chart topping anthem!</p>
 						<p>Band members have hit the Top 40 singles chart, played Top of The Pops and MTV, had airplay on BBC Radio 1, 2 and 6 Music and have toured arenas across the USA and Europe supporting bands including The Killers, Stereophonics, Snow Patrol, Keane, Ash and The Smashing Pumpkins.</p>
 						<p class="p_bottom">Playing the best indie classics with an edge, Cassettes In The Sun are the perfect alternative twist on a rocked up function band.</p>
 					</div>
 				</div>
+				<span class="sectionTitle media"><div>LISTEN</div></span>
 				<div class="mediaWrap">
 					<audio controls class="bandAudio">
 						<source src="../media/cassettes.mp3">
